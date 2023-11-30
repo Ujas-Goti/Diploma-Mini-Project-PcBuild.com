@@ -1,0 +1,50 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Masterpage.master.cs" Inherits="Masterpage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Home | PcBuild</title>
+    <link rel="icon" href="logo/iconlogo2.jpg" type="image/icon type">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/design.css" rel="stylesheet" />
+    <link href="fontawesome-free-5.15.3-web/css/all.min.css" rel="stylesheet" />
+   <meta meta name="viewport" content="width=device-width, user-scalable=no" />
+    <style type="text/css">
+        .auto-style1 {
+            width: 58px;
+            height: 48px;
+        }
+        .footer{
+        
+            background-color:black;
+            color:white;
+            font-size:18px;
+            
+ 
+        }
+    </style>
+   
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <nav id="nav">  
+            <a href="home.aspx"> <img src="logo.png" class="auto-style1" /></a>
+             
+            <asp:Button runat="server" type="button" class="btn btn-outline-light "  Text="Home" OnClick="button1_Click" ></asp:Button>&nbsp;&nbsp;
+            <asp:Button runat="server" type="button" class="btn btn-outline-light " Text="Component" OnClick="button2_Click"></asp:Button>&nbsp;&nbsp;
+            <asp:Button runat="server" type="button" class="btn btn-outline-light" Text="Build-Pc" OnClick="button3_Click" ></asp:Button> &nbsp;&nbsp;
+            <asp:Button runat="server" type="button" class="btn btn-outline-light "  Text="Saved-PCs" OnClick="button4_Click"></asp:Button>&nbsp;&nbsp;
+
+        </nav> 
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+    <br />
+    <footer>
+        <div align="center" class="footer">© 2021 Copyright Pcbuild</div>
+    </footer>
+</body>
+</html>

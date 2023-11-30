@@ -1,0 +1,14 @@
+﻿#nav {
+    background-color: black;
+    padding: 5px;
+    color: white;
+}
+#liked{
+    float:right;
+    margin-top:7px;
+    margin-right:10px;
+    
+}
+#liked:hover{
+    color:white;
+}
